@@ -11,7 +11,7 @@ export const badRequest = (error: Error):HttpResponse => ({
     body: error
 })
 
-export const goodRequest = ():HttpResponse => ({
+export const goodRequest = (data: any):HttpResponse => ({
     statusCode: 200, 
-    body: 'succes'
+    body: data
 })
