@@ -37,6 +37,7 @@ export class SignUpController implements Controller {
       return goodRequest(account)
 
     } catch (error) {
+      console.error(error)
       return serverError()
     }
   }
